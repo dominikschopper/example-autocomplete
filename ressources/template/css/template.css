@@ -4,7 +4,7 @@ html, body {
     font-size: 16px;
 }
 
-#layout {
+#root {
     width: 90%;
     margin: 2% 5%;
     padding-top: 2%;
@@ -12,6 +12,6 @@ html, body {
     min-height: 3rem;
 }
 
-#layout .bg-white {
+#root .bg-white {
     background-color: white;
 }

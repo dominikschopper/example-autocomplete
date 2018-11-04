@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'skeletonic';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
