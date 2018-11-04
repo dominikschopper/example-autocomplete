@@ -1,0 +1,17 @@
+html, body {
+    background-color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+#layout {
+    width: 90%;
+    margin: 2% 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    min-height: 3rem;
+}
+
+#layout .bg-white {
+    background-color: white;
+}
