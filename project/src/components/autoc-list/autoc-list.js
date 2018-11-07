@@ -1,14 +1,23 @@
 import React from 'react';
-import './autoc-list.css';
 
 import AutocListItem from "./autoc-list-item/autoc-list-item";
 
 const AutocList = (props) => {
+    const listItems = props.list.map((listItem, idx) => {
+        return(
+            <AutocListItem 
+                key={'key-' + idx}
+                data-id={idx}
+                name={listItem} 
+                selectHandler={props.selectHandler}
+            />);
+    });
+    
     return(
         <ul className="autoc-list">
-            {props.list.map((listItem, idx) => <AutocListItem key={'key-' + idx} name={listItem}></AutocListItem>)}
+            {listItems}
         </ul>
-    )
+    );
 };
 
 export default AutocList;

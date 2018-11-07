@@ -4,10 +4,15 @@ const AutocInput = (props) => {
     return(
         <React.Fragment>
             <label>{props.label}</label>
-            <input 
+            <input
+                className="autoc-input"
                 type="search" 
-                placeholder={props.maxLength + ' characters trigger search'} 
-                onKeyUp={props.setQuery}
+                value={props.value}
+                placeholder={props.minLength + ' chars trigger the autocomplete'} 
+                onChange={(ev) => { 
+                    props.onChange(ev.target.value);
+                    console.log('change event', ev.target);
+                }}
                 />
         </React.Fragment>
     );
