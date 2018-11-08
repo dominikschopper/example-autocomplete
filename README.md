@@ -18,6 +18,20 @@
 
 ## project structure
 
+install application with
+
+```bash
+git clone https://github.com/dominikschopper/example-autocomplete.git
+cd example-autocomplete/project
+npm install
+```
+
+then run the dev server with
+
+```bash
+npm run start
+```
+
 ### docs
 
 - project documentation
