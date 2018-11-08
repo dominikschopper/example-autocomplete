@@ -1,13 +1,15 @@
 /**
+import AutocSource from './autoc-source';
  * AutocSource class to wrap all actions around the source of the autocomplete
  */
-export default class AutocSource {
+class AutocSource {
     
     constructor() {
         this.src = [];
     }
     
     /**
+     * @memberof {AutocSource}
      * @param {array} list the list to be searched for
      * @returns {AutocSource} for chaining
      */
@@ -17,6 +19,7 @@ export default class AutocSource {
     }
 
     /**
+     * @memberof {AutocSource}
      * @param {string} query the search string
      * @returns {array} an array of results
      */
@@ -26,3 +29,5 @@ export default class AutocSource {
     }
 
 }
+
+export default AutocSource;

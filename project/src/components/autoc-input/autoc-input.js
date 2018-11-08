@@ -1,5 +1,10 @@
 import React from 'react';
 
+/**
+ * the component that contains the autocomplete input field
+ * 
+ * @param {object} props 
+ */
 const AutocInput = (props) => {
     return(
         <React.Fragment>

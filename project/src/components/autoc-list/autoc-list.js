@@ -2,6 +2,11 @@ import React from 'react';
 
 import AutocListItem from "./autoc-list-item/autoc-list-item";
 
+/**
+ * the autocomplete list component
+ * 
+ * @param {object} props 
+ */
 const AutocList = (props) => {
     const listItems = props.list.map((listItem, idx) => {
         return(

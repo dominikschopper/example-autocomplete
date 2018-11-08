@@ -1,5 +1,10 @@
 import React from 'react';
 
+/**
+ * the list item coponent for the autocomplete list
+ * 
+ * @param {object} props 
+ */
 const AutocListItem = (props) => {
     const classNames = ['autoc-entry'];
     if (props.setFocusClass) {
