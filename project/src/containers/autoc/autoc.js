@@ -49,13 +49,16 @@ class Autoc extends Component {
      * @param {string} query 
      */
     search(query) {
+        
+        this.setState({inputValue: query});
+
         if (!query) {
             return false;
         }
 
-        this.setState({inputValue: query});
 
         if (query.length < this.state.minLength) {
+            this.setState({result: []});
             return;
         }
         
