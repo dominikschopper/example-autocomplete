@@ -52,14 +52,9 @@ class Autoc extends Component {
         
         this.setState({inputValue: query});
 
-        if (!query) {
-            return false;
-        }
-
-
-        if (query.length < this.state.minLength) {
+        if (!query || query.length < this.state.minLength) {
             this.setState({result: []});
-            return;
+            return false;
         }
         
         const result = this.source.search(query);
