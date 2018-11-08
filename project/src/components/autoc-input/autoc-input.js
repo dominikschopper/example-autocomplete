@@ -9,11 +9,10 @@ const AutocInput = (props) => {
                 type="search" 
                 value={props.value}
                 placeholder={props.minLength + ' chars trigger the autocomplete'} 
-                onChange={(ev) => { 
-                    props.onChange(ev.target.value);
-                    console.log('change event', ev.target);
-                }}
-                />
+                onChange={(ev) => { props.onChange(ev.target.value); }}
+                onFocus={(ev) => { props.focusHandler(true); } }
+                onBlur={(ev) => { props.focusHandler(false);} }
+            />
         </React.Fragment>
     );
 };

@@ -7,8 +7,9 @@ const AutocList = (props) => {
         return(
             <AutocListItem 
                 key={'key-' + idx}
-                data-id={idx}
+                index={idx}
                 name={listItem} 
+                setFocusClass={idx === props.focusedId}
                 selectHandler={props.selectHandler}
             />);
     });

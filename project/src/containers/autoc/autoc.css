@@ -30,6 +30,6 @@
 }
 
 .autoc-list .autoc-entry:hover,
-.autoc-list .autoc-entry.selected {
+.autoc-list .autoc-entry.is-focused {
     background-color: silver;
 }
